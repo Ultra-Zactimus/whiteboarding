@@ -10,10 +10,13 @@ Input: "Jasmine Ann Jones"
 Output: "Jasmine%20Ann%20Jones"
 
 ---------------------------------------------------------------------------------------------------------
-const replaceSpace = (string) => {
+function replaceSpace(string) {
   let arr = [];
   arr = string.split(' ');
-  
+  for (let i = 0; i < arr.length; i++) {
+    let newArr = arr[i] = arr[i]+"%20"
+  }
+  return arr.join('').toString();
 }
 
 
