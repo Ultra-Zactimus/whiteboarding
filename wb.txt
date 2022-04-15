@@ -1,0 +1,23 @@
+"hey" true
+"hello" false
+
+for loop x2
+.charAt(index)
+var = true;
+
+const isUnique = (str) => { "1223"
+
+  if (str != String) {
+    alert("is not string");
+  } else {
+  let ifUnique = true;
+  for (let i = 0; i < str.length; i++) { "hello" 0=h
+    for (let j = i+1; j < str.length; j++) { "hello"  j = e
+      if (str.charAt(i) === str.charAt(j)) {
+        ifUnique = false
+      }
+    }
+  }
+  return ifUnique;
+  }
+}
