@@ -56,6 +56,12 @@ Input: "aaabccdddda"
 
 Output: "3ab2c4da"
 
+----------------------------------------------------------------------------------------------------------
+
+
+
+------------------------------------------------------------------------------------------------------------
+
 Question #4: Checking for Uniqueness
 Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean.
 
@@ -67,6 +73,21 @@ Output: false
 Input: "copyright"
 
 Output: true
+
+------------------------------------------------------------------------------------------------------------
+
+function unique(input) {
+  for (let char of input) {
+    if (!char === char) {
+      return true
+    }
+    else {
+      return false;
+    }
+  }
+}
+
+------------------------------------------------------------------------------------------------------------
 
 Question #5: Array Sorting
 Write an algorithm that sorts an array without using the sort() method. There are many different sorting algorithms - take the time to read about the following:
@@ -83,3 +104,8 @@ Example
 Input: [9, 2, 7, 12]
 
 Output: [2, 7, 9, 12]
+
+------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------
