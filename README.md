@@ -91,17 +91,31 @@ Output: true
 
 ------------------------------------------------------------------------------------------------------------
 
-function uniqueString(input) {
-  let unique = true;
-  for (let i = 0; i < input.length; i++) {
-    for (let j = i+1; j < input.length; j++) {
-      if (input.charAt(i) === input.charAt(j)) {
-        unique = false;
+function stringIsUnique(str) {
+  let isUnique = true;
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str.charAt(i) === str.charAt(j)) {
+        isUnique = false;
       } 
     }
   }
-  return unique;
+  return isUnique;
 }
+
+const stringIsUnique = (str) => {
+  let ifUnique = true;
+  for (let i = 0; i < str.length; i++) {
+    for (let j = i + 1; j < str.length; j++) {
+      if (str.charAt(i) === str.charAt(j)) {
+        ifUnique = false;
+      } 
+    }
+  }
+  return ifUnique;
+}
+
+
 
 ------------------------------------------------------------------------------------------------------------
 
