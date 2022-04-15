@@ -107,5 +107,23 @@ Output: [2, 7, 9, 12]
 
 ------------------------------------------------------------------------------------
 
+function arrSort(array) {
+  let loops = 0;
+  let swap = false;
+  for (let i = 0; i < array.length - loops; i++) {
+    if (array[i] > array[i + 1]) {
+      let min = array[index + 1];
+      array[i + 1] = array[i];
+      array[i] = min;
+      swapped = true;
+    }
+  }
+  loops++
+  if (swap === true) {
+    return sort(array, loops);
+  } else {
+    return array;
+  }
+}
 
 ---------------------------------------------------------------------------------
