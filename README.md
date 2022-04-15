@@ -91,17 +91,16 @@ Output: true
 
 ------------------------------------------------------------------------------------------------------------
 
-function unique(input) {
-  for (let i = 0; i < input; i++) {
-    for (let j = 1; i < input; j++) {
+function uniqueString(input) {
+  let unique = true;
+  for (let i = 0; i < input.length; i++) {
+    for (let j = i+1; j < input.length; j++) {
       if (input.charAt(i) === input.charAt(j)) {
-        return false;
-      }
-      else {
-        return true;
-      }
+        unique = false;
+      } 
     }
   }
+  return unique;
 }
 
 ------------------------------------------------------------------------------------------------------------
