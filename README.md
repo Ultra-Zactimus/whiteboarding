@@ -112,15 +112,15 @@ function arrSort(array) {
   let swap = false;
   for (let i = 0; i < array.length - loops; i++) {
     if (array[i] > array[i + 1]) {
-      let min = array[index + 1];
+      let min = array[i + 1];
       array[i + 1] = array[i];
       array[i] = min;
-      swapped = true;
+      swap = true;
     }
   }
   loops++
   if (swap === true) {
-    return sort(array, loops);
+    return arrSort(array, loops);
   } else {
     return array;
   }
