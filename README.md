@@ -58,7 +58,22 @@ Output: "3ab2c4da"
 
 ----------------------------------------------------------------------------------------------------------
 
+function compress(string) {
+  let counter = 0;
+  for (let i = 0; i < string; i++) {
+    for (let j = 1; j < string; j++) {
+      if (string[i] === string[j]) {
+        counter++
 
+        counter = 0;
+      }
+      else {
+        string++
+      }
+    }
+  }
+  return string;
+}
 
 ------------------------------------------------------------------------------------------------------------
 
@@ -77,12 +92,14 @@ Output: true
 ------------------------------------------------------------------------------------------------------------
 
 function unique(input) {
-  for (let char of input) {
-    if (!char === char) {
-      return true
-    }
-    else {
-      return false;
+  for (let i = 0; i < input; i++) {
+    for (let j = 1; i < input; j++) {
+      if (input.charAt(i) === input.charAt(j)) {
+        return false;
+      }
+      else {
+        return true;
+      }
     }
   }
 }
