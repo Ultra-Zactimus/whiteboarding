@@ -9,6 +9,16 @@ Input: "Jasmine Ann Jones"
 
 Output: "Jasmine%20Ann%20Jones"
 
+---------------------------------------------------------------------------------------------------------
+const replaceSpace = (string) => {
+  let arr = [];
+  arr = string.split(' ');
+  
+}
+
+
+-------------------------------------------------------------------------------------------------------
+
 Question #2: Array Deduping
 Write an algorithm that removes duplicates from an array. Do not use a function like filter() to solve this. Once you have solved the problem, demonstrate how it can be solved with filter(). Solve the problem with and without recursion.
 
