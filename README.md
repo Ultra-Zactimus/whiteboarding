@@ -36,17 +36,16 @@ Output: [7, 9, "hi", 12, 53]
 
 -------------------------------------------------------------------------------------------------------
 
-function noDuplicate(array) {
-  let perfectArr = [];
-  array.foreach((element) => {
-    if (!perfectArr.include(element)) {
-      perfectArr.push(element)
+function noDuplicate(arr) {
+  let output = [];
+  for (let elem of arr) {
+    if (!output.include(elem)) {
+      output.push(elem)
     }
-  });
-  return perfectArr;
+  } return output;
 }
 
-
+// does not work inside function but cannot figure it out, moving on to prompt 3
 -------------------------------------------------------------------------------------------------------
 
 Question #3: Compressing Strings
